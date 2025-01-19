@@ -1,0 +1,132 @@
+<svg width="800" height="600" viewBox="0 0 800 600" 
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- 
+    ====================================================
+    Arrow Marker Definition 
+    ====================================================
+  -->
+  <defs>
+    <marker id="arrow" 
+            markerWidth="10" 
+            markerHeight="10" 
+            refX="6" 
+            refY="3" 
+            orient="auto" 
+            markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="30" text-anchor="middle"
+        style="font-family: sans-serif; font-size: 20px; font-weight: bold;">
+    Relationships Among Key Modular Form Concepts
+  </text>
+
+  <!-- 1. Modular Curves -->
+  <rect x="300" y="70" width="200" height="50" rx="10" ry="10"
+        style="fill:#DDEEFF; stroke:#333; stroke-width:1;" />
+  <text x="400" y="100" 
+        style="font-family: sans-serif; font-size:14px;"
+        text-anchor="middle" dominant-baseline="middle">
+    Modular Curves
+  </text>
+
+  <!-- 2. Modular Forms &amp; Cusp Forms -->
+  <rect x="250" y="170" width="300" height="50" rx="10" ry="10"
+        style="fill:#FFFFCC; stroke:#333; stroke-width:1;" />
+  <text x="400" y="195" 
+        style="font-family: sans-serif; font-size:14px;"
+        text-anchor="middle" dominant-baseline="middle">
+    Modular Forms &amp; Cusp Forms
+  </text>
+
+  <!-- 3. q-Expansions -->
+  <rect x="80" y="300" width="180" height="50" rx="10" ry="10"
+        style="fill:#CCFFCC; stroke:#333; stroke-width:1;" />
+  <text x="170" y="325" 
+        style="font-family: sans-serif; font-size:14px;"
+        text-anchor="middle" dominant-baseline="middle">
+    q-Expansions
+  </text>
+
+  <!-- 4. Hecke Operators -->
+  <rect x="540" y="300" width="180" height="50" rx="10" ry="10"
+        style="fill:#FFCCEE; stroke:#333; stroke-width:1;" />
+  <text x="630" y="325" 
+        style="font-family: sans-serif; font-size:14px;"
+        text-anchor="middle" dominant-baseline="middle">
+    Hecke Operators
+  </text>
+
+  <!-- 5. L-Functions -->
+  <rect x="300" y="450" width="200" height="50" rx="10" ry="10"
+        style="fill:#FFC;" />
+  <rect x="300" y="450" width="200" height="50" rx="10" ry="10"
+        style="fill:none; stroke:#333; stroke-width:1;" />
+  <text x="400" y="475" 
+        style="font-family: sans-serif; font-size:14px;"
+        text-anchor="middle" dominant-baseline="middle">
+    L-Functions
+  </text>
+
+  <!-- Arrow: Modular Curves -> Modular Forms &amp; Cusp Forms -->
+  <line x1="400" y1="120" x2="400" y2="170" 
+        style="stroke:#333; stroke-width:2"
+        marker-end="url(#arrow)"/>
+  <!-- Adjusted text position slightly to avoid overlap -->
+  <text x="405" y="145" 
+        style="font-family: sans-serif; font-size:12px; fill:#000;">
+    Geometry → Sections
+  </text>
+
+  <!-- Arrow: Modular Forms &amp; Cusp Forms -> q-Expansions -->
+  <line x1="330" y1="220" x2="170" y2="300" 
+        style="stroke:#333; stroke-width:2"
+        marker-end="url(#arrow)"/>
+  <!-- Shift text closer to midpoint, adjust rotation anchor -->
+  <text x="180" y="260" 
+        style="font-family: sans-serif; font-size:12px; fill:#000;"
+        transform="rotate(-25, 240, 260)">
+    Local expansions at cusps
+  </text>
+
+  <!-- Arrow: Modular Forms &amp; Cusp Forms -> Hecke Operators -->
+  <line x1="470" y1="220" x2="580" y2="300" 
+        style="stroke:#333; stroke-width:2"
+        marker-end="url(#arrow)"/>
+  <!-- Move text slightly so it doesn't overlap the arrow -->
+  <text x="500" y="240" 
+        style="font-family: sans-serif; font-size:12px; fill:#000;"
+        transform="rotate(35, 500, 240)">
+    Act on M_k(Γ)
+  </text>
+
+  <!-- Arrow: Modular Forms &amp; Cusp Forms -> L-Functions -->
+  <line x1="400" y1="220" x2="400" y2="450"
+        style="stroke:#333; stroke-width:2"
+        marker-end="url(#arrow)"/>
+  <!-- Shift text slightly left so it doesn't collide with arrow -->
+  <text x="400" y="335"
+        style="font-family: sans-serif; font-size:12px; fill:#000;">
+    Dirichlet Series
+  </text>
+
+  <!-- Arrow: Hecke Operators -> L-Functions -->
+  <line x1="630" y1="350" x2="400" y2="450"
+        style="stroke:#333; stroke-width:2"
+        marker-end="url(#arrow)"/>
+  <!-- Move these two lines of text slightly, so they stack better -->
+  <text x="470" y="395"
+        style="font-family: sans-serif; font-size:12px; fill:#000;"
+        transform="rotate(-25, 510, 395)">
+    Eigenforms give rise
+  </text>
+  <text x="470" y="410"
+        style="font-family: sans-serif; font-size:12px; fill:#000;"
+        transform="rotate(-25, 510, 410)">
+    to special L-Functions
+  </text>
+
+</svg>
